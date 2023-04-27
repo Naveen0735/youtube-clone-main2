@@ -1,0 +1,118 @@
+
+p{
+    font-family: Arial;
+    margin: 0;
+    display: inline-block;
+}.videos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 40px;
+}
+.video-card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.thumbnail{
+    width: 100%;
+    min-width: 200px;
+}
+.video-details{
+    display: flex;
+    flex-direction: row;
+}
+.profile-pic-container{
+    width: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: start;
+}
+.profile-pic{
+    width: 40px;
+    border-radius: 25px;
+}
+.profile-pic-div{
+    position: relative;
+    cursor: pointer;
+}
+.video-info{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    line-height: 23px;
+}
+.video-title{
+    font-weight: 700;
+}
+.video-author{
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(135, 135, 135);
+}
+.upload-date{
+    color: rgb(135, 135, 135);
+    font-size: 13px;
+    font-weight: 400;
+}
+.thumbnail-div{
+    position: relative;
+}
+.duration{
+    position: absolute;
+    bottom: 10px;
+    right: 4px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-family: Roboto,Arial;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 2px 4px 2px;
+    border-radius: 4px;
+}
+@media (min-width:851px) and (max-width:1199px) {
+    .videos{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+@media (max-width:910px) {
+    .videos{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.nested-div{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    white-space: nowrap;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+    padding: 10px 20px 10px;
+    column-gap: 20px;
+    border-radius: 10px;
+    bottom: -85px;
+    opacity: 0;
+    pointer-events: none;
+}
+.profile-pic-div:hover .nested-div{
+    opacity: 1;
+}
+.nested-pic{
+    border-radius: 60px;
+}
+.nested-div p{
+    font-family: Roboto,Arial;
+}
+.nested-details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-top: 10px;
+}
+.nested-name{
+    font-weight: 700;
+}
+.subscribers-count{
+    font-size: 500;
+}
