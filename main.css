@@ -97,6 +97,7 @@ p{
 }
 .profile-pic-div:hover .nested-div{
     opacity: 1;
+    pointer-events: auto;
 }
 .nested-pic{
     border-radius: 60px;
