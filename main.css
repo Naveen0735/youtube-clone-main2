@@ -93,11 +93,10 @@ p{
     border-radius: 10px;
     bottom: -85px;
     opacity: 0;
-    pointer-events: none;
+    /*pointer-events: none;*/
 }
 .profile-pic-div:hover .nested-div{
     opacity: 1;
-    pointer-events: auto;
 }
 .nested-pic{
     border-radius: 60px;
